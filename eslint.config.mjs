@@ -2,6 +2,8 @@ import { fixupConfigRules } from '@eslint/compat';
 import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import prettier from 'eslint-plugin-prettier';
+import testingLibrary from 'eslint-plugin-testing-library';
+import storybook from 'eslint-plugin-storybook';
 import { defineConfig } from 'eslint/config';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -18,6 +20,10 @@ export default defineConfig([
   {
     extends: fixupConfigRules(compat.extends('@react-native', 'prettier')),
     plugins: { prettier },
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
     rules: {
       'react/react-in-jsx-scope': 'off',
       'prettier/prettier': 'error',
@@ -25,5 +31,10 @@ export default defineConfig([
   },
   {
     ignores: ['node_modules/', 'lib/'],
+  },
+  ...storybook.configs['flat/recommended'],
+  {
+    files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+    ...testingLibrary.configs['flat/react'],
   },
 ]);

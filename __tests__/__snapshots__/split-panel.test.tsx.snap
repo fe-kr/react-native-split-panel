@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplitPanel should match snapshot 1`] = `
+<View
+  onLayout={[Function]}
+  pointerEvents="auto"
+  style={
+    [
+      {
+        "display": "flex",
+      },
+      undefined,
+      false,
+      undefined,
+    ]
+  }
+  testID="split-panel"
+>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+        },
+        undefined,
+        {
+          "flex": -1,
+          "height": "50%",
+        },
+      ]
+    }
+    testID="split-panel-pane1"
+  />
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "padding": 4,
+      }
+    }
+  >
+    <View
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "backgroundColor": "#f1f1f1",
+            "borderColor": "#c0c0c0",
+            "borderRadius": 6,
+            "borderWidth": 0.5,
+            "boxSizing": "border-box",
+            "flexDirection": "column",
+            "gap": 4,
+            "justifyContent": "center",
+            "minHeight": 12,
+            "minWidth": 12,
+          },
+          [
+            {
+              "flexDirection": "row",
+            },
+            {
+              "cursor": "auto",
+            },
+            false,
+            undefined,
+          ],
+        ]
+      }
+      testID="split-panel-resizer"
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#666666",
+            "borderRadius": 4,
+            "height": 4,
+            "width": 4,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "backgroundColor": "#666666",
+            "borderRadius": 4,
+            "height": 4,
+            "width": 4,
+          }
+        }
+      />
+      <View
+        style={
+          {
+            "backgroundColor": "#666666",
+            "borderRadius": 4,
+            "height": 4,
+            "width": 4,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+        },
+        undefined,
+        false,
+      ]
+    }
+    testID="split-panel-pane2"
+  />
+</View>
+`;
