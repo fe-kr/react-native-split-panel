@@ -41,7 +41,7 @@
     "prepare": "bob build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build-storybook",
     "deploy": "gh-pages -d storybook-static",
     "release": "release-it --only-version"
   },
