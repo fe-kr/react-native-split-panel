@@ -1,5 +1,5 @@
 # React Native Split Panel
-[![npm version](https://img.shields.io/npm/v/react-native-split-panel.svg)](https://www.npmjs.com/package/react-custom-highlight)
+[![npm version](https://img.shields.io/npm/v/react-native-split-panel.svg)](https://www.npmjs.com/package/react-native-split-panel)
 [![Storybook](https://img.shields.io/badge/Storybook-Live%20Demo-ff4785?logo=storybook&logoColor=white)](https://fe-kr.github.io/react-native-split-panel/)
 
 A flexible, resizable split panel component for React Native.
@@ -69,9 +69,9 @@ export default function App() {
 | `pane2Style`       | `ViewStyle`                                        | `-`              | Style applied to the second pane.                                         |
 | `resizerStyle`     | `ViewStyle`                                        | `-`              | Style applied to the resizer handle.                                      |
 | `resizer`          | `React.ComponentType<ViewProps>`                   | `DefaultResizer` | Custom resizer component.                                                 |
-| `onChange`         | `(e: GestureResponderEvent, size: number) => void` | `-`              | Called when the pane size changes.                                        |
-| `onResizeStarted`  | `(e: GestureResponderEvent, size: number) => void` | `-`              | Called when resizing starts.                                              |
-| `onResizeFinished` | `(e: GestureResponderEvent, size: number) => void` | `-`              | Called when resizing ends.                                                |
+| `onChange`         | `(e: Event, size: number) => void` | `-`              | Called when the pane size changes.                                        |
+| `onResizeStarted`  | `(e: Event, size: number) => void` | `-`              | Called when resizing starts.                                              |
+| `onResizeFinished` | `(e: Event, size: number) => void` | `-`              | Called when resizing ends.                                                |
 
 ---
 
